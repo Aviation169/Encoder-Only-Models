@@ -1,6 +1,9 @@
 🤖Encoder Only Models🤖
 -----
-(●'◡'●) This repository contains a PyTorch implementation of a compact of enoder only transformer-based model for sentiment analysis on the IMDB movie review dataset. The model is designed to be lightweight while maintaining competitive performance.
+(●'◡'●) This repository contains PyTorch implementations of encoder-only transformer architectures, focused on NLP tasks. My goal is to provide lightweight yet effective transformer designs for research and experimentation.
+
+(●'◡'●) This repository is only for encoder-only architecture models.
+It will contain multiple model folders, each representing a new encoder model architecture. These are currently being tested and will be uploaded soon.
 
 1️⃣Important Note1️⃣
 -----
