@@ -66,7 +66,8 @@ Final test set evaluation
 -----
 Key architecture parameters (modifiable in code):
 
-`config = {
+```
+config = {
     "vocab_size": tokenizer.vocab_size,  # 30522 for bert-base-uncased
     "max_len": 128,
     "hidden_size": 128,
@@ -75,7 +76,8 @@ Key architecture parameters (modifiable in code):
     "ff_size": 512,
     "dropout": 0.1,
     "num_classes": 2
-}`
+}
+```
 
 🪟Model Architecture🖼️
 ----
