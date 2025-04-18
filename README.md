@@ -1,4 +1,4 @@
-🤖Sentiment Analysis with Mini Transformer🤖
+🤖Encoder Only Models🤖
 -----
 (●'◡'●) This repository contains a PyTorch implementation of a compact of enoder only transformer-based model for sentiment analysis on the IMDB movie review dataset. The model is designed to be lightweight while maintaining competitive performance.
 
