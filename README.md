@@ -24,17 +24,17 @@ This is my own custom implementation of an encoder only transformer model design
 
 📅Requirements📅
 -----
-Python 3.7+
+`Python 3.7+`
 
-PyTorch 2.0+
+`PyTorch 2.0+`
 
-Transformers 4.30+
+`Transformers 4.30+`
 
-Datasets 2.12+
+`Datasets 2.12+`
 
-scikit-learn
+`scikit-learn`
 
-tqdm
+`tqdm`
 
 ⬇️Installation⬇️
 -----
