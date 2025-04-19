@@ -1,0 +1,1 @@
+The code implements an encoder-only Vision Transformer (ViT) integrated with a Progressive Neural Network (PNN) for image classification. The architecture combines ViT's patch-based processing with PNN's continual learning capabilities to classify images, optimized for the CIFAR-10 dataset.
