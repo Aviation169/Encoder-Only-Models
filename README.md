@@ -28,6 +28,7 @@ Encoder only model for sentiment analysis -PNN(Progressive neural network)
 
 🤗 Hugging Face Integration: Uses transformers tokenizer and datasets library for data loading.
 
+
 📅Requirements📅
 -----
 `Python 3.7+`
@@ -73,6 +74,58 @@ config = {
 🪟Model Architecture🖼️
 ----
 All models in our repository follow a transformer-based encoder-only architecture. Additionally, you can find encoder architectures based on FNN (Feedforward Neural Network), PNN (Progressive Neural Network), and even ViT (Vision Transformer).
+
+💀Transformer Architecture:
+
+1️⃣Input Embedding Layer
+
+Converts input tokens (e.g., words, subwords) into dense vector representations.
+
+Often includes:
+
+Token embeddings
+
+Positional embeddings (since transformers are non-sequential)
+
+2️⃣Multi-Head Self-Attention
+
+Allows the model to focus on different parts of the input simultaneously.
+
+Helps in capturing relationships between tokens irrespective of their distance in the sequence.
+
+3️⃣Layer Normalization
+
+Applied before or after sub-layers to stabilize and speed up training.
+
+4️⃣Feedforward Neural Network (FNN)
+
+A position-wise fully connected feedforward network applied to each position separately and identically.
+
+Usually consists of two linear transformations with a non-linear activation (e.g., ReLU or GELU).
+
+or
+
+4️⃣Progressive Neural Network (PNN)
+
+Replaces the traditional feedforward network.
+
+Allows knowledge accumulation across layers by progressively building representations.
+
+Supports lateral connections for transferring knowledge from previous tasks or layers.
+
+5️⃣Residual Connections
+
+Skip connections that add the input of each sub-layer (like attention or FNN) to its output before normalization.
+
+6️⃣Stacked Encoder Layers
+
+The encoder is made up of multiple identical layers (e.g., 6 or 12) containing the components above.
+
+7️⃣Output Layer
+
+Outputs the final hidden states of each token.
+
+Can be used for various downstream tasks like classification, regression, etc.
 
 
 📃License📃
