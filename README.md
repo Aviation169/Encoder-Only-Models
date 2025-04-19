@@ -76,7 +76,7 @@ config = {
 ----
 All models in our repository follow a transformer-based encoder-only architecture. Additionally, you can find encoder architectures based on FNN (Feedforward Neural Network), PNN (Progressive Neural Network), and even ViT (Vision Transformer).
 
-💀Transformer Architecture:
+**Transformer Architecture:**
 
 1️⃣Input Embedding Layer
 
