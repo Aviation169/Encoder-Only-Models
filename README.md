@@ -10,6 +10,11 @@ It will contain multiple model folders, each representing a new encoder model ar
 ⚠️ Production Readiness Notice:
 This is my own custom implementation of an encoder only transformer model designed for educational purposes and small-scale experimentation. For production environments required lot of data for training.
 
+📂Available Folders📂
+----
+Encoder only model for sentiment analysis -FNN
+
+
 🖨️Features🖨️
 -----
 🚀 Mini Transformer Architecture: Custom smaller transformer model with configurable layers and heads.
@@ -42,29 +47,14 @@ This is my own custom implementation of an encoder only transformer model design
 
 📂Usage📂
 -----
-Training the Model
-Run the training script:
-`python train.py`
+You can access a free encoder-only architecture code from this repository. All the codes have been tested with training data. You can either use them directly or customize them as per your requirements.
 
-^_^First-run dataset setup:
-
-Automatically downloads and caches IMDB dataset (~80MB)
-
-Subsequent runs use local cached version
-
-^_^Expected output:
-
-GPU detection and VRAM information
-
-Training progress bar with loss metrics
-
-Validation metrics after each epoch
-
-Final test set evaluation
 
 🔮Model Configuration🔮
 -----
 Key architecture parameters (modifiable in code):
+
+This is Default config;
 
 ```
 config = {
@@ -81,40 +71,8 @@ config = {
 
 🪟Model Architecture🖼️
 ----
-MiniTransformerEncoder components:
+All models in our repository follow a transformer-based encoder-only architecture. Additionally, you can find encoder architectures based on FNN (Feedforward Neural Network), PNN (Progressive Neural Network), and even ViT (Vision Transformer).
 
-
-|Component|Specification|
----------------|--------------
-|Hidden Size	|128|
-|Transformer Layers|	2|
-|Attention Heads |	8|
-|FFN Dimension	|512|
-|Total Parameters	|~1.4M|
-
-😊Expected Performance😊
------
-
-|Metric	|Value|
---------|-----
-|Accuracy|	~64%|
-|F1 Score|	~67%|
-|Training Time|	<5min (on RTX 4080 GPU)|
-
-
-
-🔽Saved Models🔽
-----
-→Trained models are saved as:
-
-`sentiment_model.pth`
-
-→To load a trained model:
-
-`from train import load_model, MiniTransformerEncoder
-config = {...}  # Same as training configuration
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = load_model("sentiment_model.pth", config, device)`
 
 📃License📃
 ----
