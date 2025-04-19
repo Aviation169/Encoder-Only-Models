@@ -13,6 +13,7 @@ This is my own custom implementation of an encoder only transformer model design
 📂Available Folders📂
 ----
 Encoder only model for sentiment analysis -FNN(Feed-Forward neural network)
+
 Encoder only model for sentiment analysis -PNN(Progressive neural network)
 
 
