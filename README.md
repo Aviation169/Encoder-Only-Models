@@ -16,6 +16,8 @@ Encoder only model for sentiment analysis -FNN(Feed-Forward neural network)
 
 Encoder only model for sentiment analysis -PNN(Progressive neural network)
 
+Vision Transformer(Encoder-only model) for imgage classification -PNN(Progressive neural network)
+
 
 🖨️Features🖨️
 -----
